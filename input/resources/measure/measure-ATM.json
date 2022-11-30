@@ -1,0 +1,118 @@
+{
+    "resource": {
+      "resourceType": "Measure",
+      "url": "http://ecqi.healthit.gov/ecqms/Measure/ATM",
+      "version": "0.0.000",
+      "name": "ATM",
+      "title": "A Test Measure",
+      "experimental": true,
+      "publisher": "UNKNOWN",
+      "contact": [ {
+        "telecom": [ {
+          "system": "url",
+          "value": "https://cms.gov"
+        } ]
+      } ],
+      "purpose": "UNKNOWN",
+      "copyright": "UNKNOWN",
+      "effectivePeriod": {
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "library": [ "http://ecqi.healthit.gov/ecqms/Library/ATM" ],
+      "disclaimer": "UNKNOWN",
+      "group": [ {
+        "id": "63768fb64ba3d47c885c0290",
+        "extension": [ {
+          "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+          "valueCodeableConcept": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+              "code": "proportion",
+              "display": "Proportion"
+            } ]
+          }
+        }, {
+          "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+          "valueCode": "boolean"
+        } ],
+        "population": [ {
+          "id": "2efd6d5e-1468-4fbd-b001-ad66a89cfe96",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "initial-population",
+              "display": "Initial Population"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Initial Population"
+          }
+        }, {
+          "id": "25d08722-e530-4634-9cda-f7429b57c48b",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "denominator",
+              "display": "Denominator"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Denominator"
+          }
+        }, {
+          "id": "eb2aa47f-393d-4bc9-8741-c5f418ac6b7b",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "denominator-exclusion",
+              "display": "Denominator Exclusion"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier"
+          }
+        }, {
+          "id": "b7f77327-1d40-45e8-9546-3867c45ab694",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "denominator-exception",
+              "display": "Denominator Exception"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Denominator Exceptions"
+          }
+        }, {
+          "id": "d33a6cba-040b-4bbd-82f3-7b42ae044891",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator",
+              "display": "Numerator"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Numerator"
+          }
+        }, {
+          "id": "511ce05c-9e23-4a8d-8030-d8725701cdf3",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator-exclusion",
+              "display": "Numerator Exclusion"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier"
+          }
+        } ]
+      } ]
+    }
+  }
